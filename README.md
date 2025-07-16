@@ -1,2 +1,2 @@
 # tcprun
-open a socket and exec a program
+open a socket, sends all stdin to it then execs a program with the socket on stdin
