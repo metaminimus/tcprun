@@ -96,7 +96,7 @@ int main(int argc, char * const argv[])
     for(int i = 4; i < argc; ++i) fprintf(stderr, " %s", argv[i]);
     fprintf(stderr, "\n");
 
-    if (-1 == execvp(argv[3], argv+4)) {
+    if (-1 == execvp(argv[3], argv+3)) {
         fprintf(stderr, "ERROR: could not start cmd %s: errno %d: %s\n", argv[3], errno, strerror(errno));
         return 8;
     }
